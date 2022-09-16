@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = "icon" type = "png" href = "images/icons8-female-profile-48.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+</head>
+<body class="mysignup">
+    <div class="cntainer">
+        <div class="header">
+            <h2>SIGN IN FORM</h2>
+      </div> 
+        <form role="form" onsubmit="signIn(event);" autocomplete="off">
+            <div class="form-control">
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-control">
+                <input type="password" name="pwd" id="pwd" placeholder="Password" required>
+            </div>
+            <div class="form-control">
+                <button type="submit">Sign In</button>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a> here</p>
+    </div>
+    
+    <script src="project.js"></script>
+</body>
+</html>

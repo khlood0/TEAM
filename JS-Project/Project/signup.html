@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = "icon" type = "png" href = "images/icons8-female-profile-48.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign UP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="mysignup">
+<div class="cntainer">
+         <div class="header">
+               <h2>CREATE ACCOUNT</h2>
+         </div>      
+    <form id="form" role="form" onsubmit="signUp(event);" autocomplete="off">
+        <div class="form-control">
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+        </div>
+        <div class="form-control">
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+        </div>
+        <div class="form-control">
+            <input type="email" name="email" id="email" onkeyup="validatemail()"  placeholder="Email " required>
+            <span id="email-error"></span>
+            <div class="error"></div>
+        </div>
+        <div class="form-control">
+            <input type="password" name="password" id="password" onkeyup="validatepass()" placeholder="Password" required>
+            <span id="password-error"></span>
+            <div class="error"></div>
+        </div>
+        <div class="form-control">
+            <button type="submit" onclick="validatsumbit()">Sign Up</button>
+            <span id="submit-error"></span>
+        </div>
+    </form>
+    <p>Already Have Acount? <a href="signin.html">Sign In</a></p>
+</div>
+
+
+
+    <script src="project.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: ' Poppins ',sans-serif;
+	color: rgb(65, 65, 65);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+#title {
+	text-align: center;
+	margin-top: 40px;
+	color: #f08e61;
+}
+
+#make-quiz-btn {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: auto;
+	margin-top: 40px;
+	text-decoration: none;
+	
+}
+#make-quiz-btn button {
+	padding: 20px 50px;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	background-color: #f08e61;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	transition: background 0.3s;
+}
+#make-quiz-btn button:hover {
+	background-color: #e4c1b1;
+}
+
+#quiz-list {
+	position: relative;
+	margin: auto;
+	margin-top: 40px;
+	background-color: white;
+	max-width: 80%;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	max-height: 50%;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#quiz-list::-webkit-scrollbar {
+	width: 10px;
+}
+
+#quiz-list::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+#quiz-list::-webkit-scrollbar-thumb {
+	background: rgb(183, 217, 233);
+	border-radius: 10px;
+}
+
+#quiz-list::-webkit-scrollbar-thumb:hover {
+	background: rgb(153, 198, 219);
+}
+
+#quiz-list h2 {
+	text-align: center;
+	margin: 15px 0 5px;
+}
+.quiz-item {
+	background-color: #f8ebe5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px 10px;
+	border-radius: 10px;
+	min-height: 60px;
+	padding: 0 10px;
+}
+.quiz-item:hover {
+	background-color: #f7d0bf;;
+}
+.quiz-item div {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	
+}
+.quiz-item div p {
+	margin-left: 10px;
+	font-weight: 500;
+}
+.quiz-item button {
+	padding: 12px;
+	border: none;
+	background-color: #f08e61;
+	border-radius: 8px;
+	color: white;
+	cursor: pointer;
+}
+.quiz-item-icon {
+	width: 35px;
+	float: left;
+}
+
+
+
+@media screen and (max-width: 480px) {
+	.quiz-item button {
+		padding: 10px;
+		font-size: 10px;
+	}
+}

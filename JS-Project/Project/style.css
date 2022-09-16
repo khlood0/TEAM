@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ' Poppins ',sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #f08e61;
+    --text-color: rgb(0, 0, 0);
+    --bg-color: #fdfdfd;
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+
+}
+
+* ::selection {
+    background: var(--main-color);
+    color: #fff
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color)
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background: var(--bg-color);
+    box-shadow: 0 19px 38px rgba(173, 156, 156, 0.1);
+
+}
+
+.logo {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    list-style-type: none;
+  
+}
+
+.navbar a {
+    color:var(--text-color);
+    font-size: 1.1rem; 
+    padding: 10px 30px;
+    font-weight: 500;
+    display:inline-block;
+    text-decoration: none;
+   
+
+}
+.navbar a:hover
+{
+    color: var(--main-color);
+    transition: .4s;
+}
+section{
+    padding: 70px 17%;
+}
+.home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.Home_img{
+    max-width: 100%;
+    width: 600px;
+    height:400px;
+    padding-bottom: 300px;
+    padding-left: 70px;
+}
+.home-text h1 
+{
+ font-size: var(--big-font);
+ color: var(--main-color);
+}
+.home-text h2
+{
+ font-size: var(--h2-font);
+ margin: 1rem 0 2rem;
+}
+.btn{
+    display: inline;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+.btn:hover{
+    transform: scale(7) translateY(10px);
+    transition:0.4s;
+}
+
+
+/* ----------------------------------------------------------login---------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+.mysignup {
+	background-color: var(--bg-color);
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+} 
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 500px;
+	max-width: 100%;
+    /* max-height: 300px; */
+}
+ 
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+    width:500px;
+    text-align: center;
+   
+}
+
+.header h2 {
+	margin: 0;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+#email-error{
+  position: absolute;
+  bottom: 0px;
+  left: 17px;
+  font-size: 14px;
+  color:red;
+}
+#password-error{
+    color:rgb(250, 3, 3);
+    top: 12px;
+    left: 17px;
+}
+#submit-error{
+    color:rgb(250, 3, 3);
+    bottom: 0px;
+    left: 17px;
+}
+ .form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+.form-control span i{
+    color:seagreen;
+}
+/*
+.form-control.success input {
+	border-color: #2ecc71;
+}
+.form-control.error input {
+    border-color: #ff3860;
+}
+.form-control.error  {
+    color: #ff3860;
+    font-size: 9px;
+  
+} */
+
+.form-control button {
+	background-color:var( --main-color);
+	border: 2px solid #8e44ad;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}  
+
+
+
+
+
+
+
+
